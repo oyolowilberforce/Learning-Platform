@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Learning Platform</h1>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+  </header>
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#" onclick="toggleView('courses')">View Courses</a></li>
+        <li><a href="#" onclick="toggleView('contact')">Contact Us</a></li>
+        <li><a href="#" onclick="toggleView('about')">About Us</a></li>
+        <li><a href="#" onclick="toggleView('news')">Latest News</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div id="courses" class="toggle-section">
+        <h2>Courses</h2>
+        <ul>
+            <li><a href="SQL.html">SQL</a></li>
+            <li><a href="Python.html">Python</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>         
+        </ul>
+      </div>
+      <div id="contact" class="toggle-section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@learningplatform.com</p>
+        <p>Phone: +123456789</p>
+      </div>
+      <div id="about" class="toggle-section">
+        <h2>About Us</h2>
+        <p>We are a leading online learning platform providing top-quality courses to help you advance your skills.</p>
+        <p>Our mission is to make education accessible to everyone, everywhere.</p>
+      </div>
+      <div id="news" class="toggle-section">
+        <h2>Latest News</h2>
+        <p>Stay tuned for the latest updates and announcements from our platform.</p>
+        <ul>
+          <li>New Python course released!</li>
+          <li>Upcoming webinar on SQL basics.</li>
+          <li>JavaScript workshop next week.</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
